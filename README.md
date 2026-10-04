@@ -294,3 +294,4 @@ These are genuine, current limitations, not hidden gaps:
   repository method names, `@Value` property keys) but not build-verified. **Run `mvn clean
   install` yourself the first time** and fix anything your Java/Maven/MySQL versions surface —
   see the pom.xml for exact dependency versions if you hit a resolution issue.
+DevOps CI/CD workflow integrated with Git and GitHub.
