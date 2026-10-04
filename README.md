@@ -295,3 +295,4 @@ These are genuine, current limitations, not hidden gaps:
   install` yourself the first time** and fix anything your Java/Maven/MySQL versions surface —
   see the pom.xml for exact dependency versions if you hit a resolution issue.
 DevOps CI/CD workflow integrated with Git and GitHub.
+Feature: Added DevOps CI workflow documentation.
