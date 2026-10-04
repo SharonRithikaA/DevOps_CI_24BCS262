@@ -74,11 +74,11 @@ class MemberServiceTest {
         assertEquals("test.member@example.com", response.email());
         assertEquals(TODAY, response.joinDate());
         assertEquals(TODAY, response.membershipStartDate());
-        assertEquals(LocalDate.of(2026, 6, 14), response.membershipEndDate()); // 3 months, last valid day
+        assertEquals(LocalDate.of(2026, 6, 14), response.membershipEndDate());
         assertEquals(MembershipStatus.ACTIVE, response.membershipStatus());
         assertEquals(PaymentStatus.PENDING, response.paymentStatus());
         assertNull(response.trainerId());
-        verify(memberRepository, times(2)).save(any(Member.class)); // 2nd save stores the member code
+        verify(memberRepository, times(2)).save(any(Member.class));
     }
 
     @Test
@@ -151,6 +151,7 @@ class MemberServiceTest {
         assertEquals("Asha Active", response.fullName());
         assertEquals(50, response.remainingDays());
         assertEquals("Standard", response.planName());
+        assertNotNull(response.email());
     }
 
     @Test
